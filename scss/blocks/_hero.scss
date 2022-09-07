@@ -1,0 +1,132 @@
+/* hero start */
+
+.hero__form-input {
+    position: relative;
+    width: 343px;
+    height: 50px;
+    background-color: var(--main-body-header);
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    border-radius: 5px;
+    border: none;
+}
+
+.hero__form-label {
+    position: relative;
+    &::after {
+        position: absolute;
+        top: 20px;
+        left: 32px;
+        width: 16px;
+        height: 16px;
+        color: var(--main-body-search);
+        background-image: url(../../images/search.svg);
+        background-repeat: no-repeat;
+        content: "";
+    }
+}
+.hero__form-label-show{
+    &::after {
+        background-image: url(../images/searchwhite.svg);
+        
+    }
+    
+}
+[type=search] {
+    outline-offset: 0;
+}
+
+::placeholder {
+    padding-left: 74px;
+    font-size: 12px;
+    line-height: 20px;
+    color:var(--main-body-plec);
+}
+
+.hero__form-country {
+    position: relative;
+    &::after {
+        position: absolute;
+        top: 25px;
+        right: 18px;
+        width: 9px;
+        height: 5px;
+        background-image: url(../images/shapewhite.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        content: "";
+    }
+}
+
+.hero__form-country-show {
+    &::after {
+        background-image: url(../images/shapeblack.svg);
+    }
+}
+
+.hero__form-select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    background-color: var(--main-body-header);
+    color:var( --main-body-title);
+    border-radius: 5px;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    border: none;
+    appearance: none;
+}
+
+.header__link {
+    text-decoration: none;
+}
+
+.hero__card {
+    max-width: 264px;
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: var(--main-body-header);
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+    border-radius: 5px;
+    
+}
+
+.hero__card-list {
+    @include list;
+}
+
+.hero__card-title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 800;
+    color:var(--main-body-title);
+}
+
+.hero__card-span {
+    font-weight: 600;
+}
+
+.hero__card-text {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color:var(--main-body-title);
+}
+
+
+@include mobile-first(992px) {
+    .hero__card {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .hero__form-input {
+        width: 480px;
+    }
+
+}
+/* hero end */
+
