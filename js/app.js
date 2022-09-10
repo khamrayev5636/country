@@ -8,5 +8,8 @@ elBtn.addEventListener("click", function(){
     elBody.classList.toggle("dark-mod");
     elLabel.classList.toggle("hero__form-label-show");
     elTop.classList.toggle("hero__form-country-show");
+})
+
+elBtn.addEventListener("click", function(){
     linkBtn.classList.toggle("about__link-back");
 })
