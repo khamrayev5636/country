@@ -96,6 +96,9 @@
     border-radius: 2px;
 }
 
+
+
+
 @include mobile-first (992px) {
     .about__img {
         height: 416px;
@@ -106,5 +109,10 @@
         font-size: 16px;
         line-height: 32px;
     }
+
+    .about__list:nth-of-type(1) {
+        margin-right:0;
+    }
+    
 }
 /* About end */
